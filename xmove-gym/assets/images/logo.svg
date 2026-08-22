@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF000"/>
+      <stop offset="100%" stop-color="#FFE600"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Kettlebell Handle -->
+  <path d="M 155 80 C 155 30, 245 30, 245 80 L 225 80 C 225 48, 175 48, 175 80 Z" fill="url(#yellowGrad)"/>
+
+  <!-- Kettlebell Main Sphere Body -->
+  <path d="M 130 145 C 130 90, 270 90, 270 145 C 270 200, 130 200, 130 145 Z" fill="url(#yellowGrad)"/>
+
+  <!-- Stylized 'X' Cutout inside Kettlebell Sphere -->
+  <path d="M 150 115 C 175 140, 200 150, 245 180 L 225 190 C 185 160, 165 145, 142 125 Z" fill="#0d0e12"/>
+  <path d="M 250 115 C 225 140, 200 150, 155 180 L 175 190 C 215 160, 235 145, 258 125 Z" fill="#0d0e12"/>
+  <path d="M 158 148 L 242 148 C 242 153, 158 153, 158 148 Z" fill="#0d0e12"/>
+
+  <!-- Text "MOVE" -->
+  <text x="200" y="248" font-family="'Oswald', 'Montserrat', sans-serif" font-weight="900" font-size="52" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">MOVE</text>
+  
+  <!-- Subtext "GYM" with lines -->
+  <line x1="100" y1="272" x2="160" y2="272" stroke="url(#yellowGrad)" stroke-width="2" stroke-linecap="round"/>
+  <text x="200" y="278" font-family="'Oswald', 'Montserrat', sans-serif" font-weight="700" font-size="20" fill="url(#yellowGrad)" text-anchor="middle" letter-spacing="8">GYM</text>
+  <line x1="240" y1="272" x2="300" y2="272" stroke="url(#yellowGrad)" stroke-width="2" stroke-linecap="round"/>
+</svg>
