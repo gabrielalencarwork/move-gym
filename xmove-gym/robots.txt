@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://move-gym-nu.vercel.app/sitemap.xml

@@ -3,20 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <script>document.documentElement.classList.add('js');</script>
+
   <!-- SEO & Social Meta Tags -->
   <title>X-Move Gym | Academia High Performance em Montes Claros</title>
   <meta name="description" content="Evolua além dos seus limites na X-Move Gym. Musculação de alta performance, personal trainer, fisioterapia integrada e parceria Wellhub/Gympass em Montes Claros / MG. Agende seu treino grátis!">
   <meta name="keywords" content="X-Move Gym, Academia Montes Claros, Musculação, Personal Trainer, Fisioterapia, Wellhub, Gympass">
+  <meta name="theme-color" content="#0b0c10">
+  <link rel="canonical" href="https://move-gym-nu.vercel.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="X-Move Gym">
+  <meta property="og:url" content="https://move-gym-nu.vercel.app/">
   <meta property="og:title" content="X-Move Gym | Make Your Body Shape">
   <meta property="og:description" content="A estrutura definitiva para transformar seus resultados físicos e saúde em Montes Claros.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:image" content="https://move-gym-nu.vercel.app/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Área de musculação da X-Move Gym em Montes Claros">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="X-Move Gym | Academia High Performance em Montes Claros">
+  <meta name="twitter:description" content="Musculação, personal, fisioterapia integrada e Wellhub. Agende seu treino grátis.">
+  <meta name="twitter:image" content="https://move-gym-nu.vercel.app/assets/images/og-image.jpg">
 
-  <!-- Favicon & Stylesheet -->
+  <!-- Dados estruturados (SEO local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "X-Move Gym",
+    "url": "https://move-gym-nu.vercel.app/",
+    "image": "https://move-gym-nu.vercel.app/assets/images/og-image.jpg",
+    "telephone": "+55 38 99945-9994",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua João F. Pimenta, 32",
+      "addressLocality": "Montes Claros",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": -16.728485, "longitude": -43.8725011 },
+    "hasMap": "https://maps.app.goo.gl/956UyR5K5Nommwva8",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "05:30", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "08:00", "closes": "12:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/xmovegym"]
+  }
+  </script>
+
+  <!-- Favicon, Fontes & Stylesheet -->
   <link rel="icon" type="image/svg+xml" href="images/logo-icon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
   <!-- ==================== 1. TOP UTILITY BAR ==================== -->
   <div class="top-bar">
@@ -24,7 +69,7 @@
       
       <!-- Units & Quick WhatsApp Links -->
       <div class="top-bar-units">
-        <a href="https://wa.me/5538999459994" target="_blank" class="unit-top-badge" title="Falar no WhatsApp">
+        <a href="https://wa.me/5538999459994" target="_blank" rel="noopener noreferrer" class="unit-top-badge" title="Falar no WhatsApp">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           <span class="unit-city">R. João F. Pimenta, 32 – Cidade Santa Maria, Montes Claros</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -34,7 +79,7 @@
 
       <!-- Social & Benefit Badges -->
       <div class="top-bar-right">
-        <a href="https://www.instagram.com/xmovegym" target="_blank" class="social-top-badge" id="top-bar-instagram">
+        <a href="https://www.instagram.com/xmovegym" target="_blank" rel="noopener noreferrer" class="social-top-badge" id="top-bar-instagram">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
           @xmovegym
         </a>
@@ -50,13 +95,12 @@
   <!-- ==================== 2. MAIN NAVBAR ==================== -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="brand-logo" id="nav-brand-logo">
+      <a href="#home" class="brand-logo" id="nav-brand-logo" aria-label="X-Move Gym - início">
         <img src="images/logo.svg" alt="X-Move Gym Logo" class="logo-svg-img">
       </a>
 
-      <nav>
+      <nav aria-label="Navegação principal">
         <ul class="nav-links" id="nav-menu">
-          <li><a href="#home" id="nav-home">Início</a></li>
           <li><a href="#why-choose" id="nav-why">Diferenciais</a></li>
           <li><a href="#programas" id="nav-programs">Programas</a></li>
           <li><a href="#estrutura" id="nav-estrutura">Estrutura</a></li>
@@ -68,21 +112,22 @@
       </nav>
 
       <div class="nav-cta-wrapper">
-        <button class="btn btn-orange open-modal-btn" id="btn-nav-pass">
+        <button type="button" class="btn btn-orange open-modal-btn" id="btn-nav-pass">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
           Resgatar 1 Dia Grátis
         </button>
-        <button class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Abrir Menu">
+        <button type="button" class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
       </div>
     </div>
   </header>
 
+  <main id="conteudo">
   <!-- ==================== 3. HERO SECTION ==================== -->
   <section class="hero hero-centered" id="home">
-    <div class="hero-bg-image-overlay" style="background-image: url('assets/images/estrutura-halteres.jpg');"></div>
-    <video autoplay loop muted playsinline class="hero-bg-video">
+    <div class="hero-bg-image-overlay" style="background-image: url('assets/images/hero-background.jpg');"></div>
+    <video autoplay loop muted playsinline preload="metadata" poster="assets/hero-poster.jpg" class="hero-bg-video" aria-hidden="true">
       <source src="assets/neon_background_24s.mp4" type="video/mp4">
     </video>
     <div class="neon-grid-pattern"></div>
@@ -98,7 +143,7 @@
         </p>
         
         <div class="hero-actions">
-          <button class="btn btn-orange open-modal-btn" id="btn-hero-cta">
+          <button type="button" class="btn btn-orange open-modal-btn" id="btn-hero-cta">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
             Agendar Treino Grátis
           </button>
@@ -127,7 +172,7 @@
   </section>
 
   <!-- ==================== 4. WHY CHOOSE US SECTION (CIRCULAR BADGE) ==================== -->
-  <section class="section" id="why-choose" style="background: var(--bg-dark-alt);">
+  <section class="section section-alt" id="why-choose">
     <div class="neon-grid-pattern"></div>
     <div class="neon-bg-orb orb-amber-right"></div>
     <div class="container why-us-grid">
@@ -136,14 +181,14 @@
       <div class="why-us-image-wrapper">
         <div class="orange-ring-arc"></div>
         <div class="circular-image-mask">
-          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Personal Trainers X-Move Gym">
+          <img src="assets/images/diferenciais-aluna.jpg" alt="Aluna treinando na X-Move Gym" width="768" height="1024" loading="lazy" decoding="async">
         </div>
       </div>
 
       <div class="why-us-content">
         <span class="section-subtitle">NOSSOS DIFERENCIAIS</span>
-        <h2 class="section-title">POR QUE ESCOLHER A <span style="color: var(--accent-orange);">X-MOVE GYM</span>?</h2>
-        <p style="margin-top: 12px;">Proporcionamos uma experiência de treino completa e focada em resultados contínuos, com suporte profissional e equipamentos de alta precisão.</p>
+        <h2 class="section-title">POR QUE ESCOLHER A <span class="accent">X-MOVE GYM</span>?</h2>
+        <p class="lead-text">Proporcionamos uma experiência de treino completa e focada em resultados contínuos, com suporte profissional e equipamentos de alta precisão.</p>
 
         <div class="features-2x2-grid">
           <div class="feature-box">
@@ -188,94 +233,88 @@
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">NOSSAS MODALIDADES</span>
-        <h2 class="section-title">PROGRAMAS DE <span style="color: var(--accent-orange);">TREINO</span></h2>
+        <h2 class="section-title">PROGRAMAS DE <span class="accent">TREINO</span></h2>
         <p>Escolha a modalidade ideal para o seu objetivo físico e comece hoje mesmo.</p>
       </div>
 
       <div class="programs-grid">
-        <!-- Program 1 -->
-        <div class="program-card">
+        <article class="program-card">
           <div class="program-img">
-            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" alt="Cardio & Force Training">
+            <img src="assets/images/musculacao-high-performance.webp" alt="Aluno treinando musculação com halteres na X-Move Gym" width="750" height="1000" loading="lazy" decoding="async">
           </div>
           <div class="program-body">
             <h3>MUSCULAÇÃO HIGH PERFORMANCE</h3>
             <p>Aparelhagem completa para hipertrofia, ganho de força bruta e definição muscular acelerada.</p>
-            <button class="btn btn-outline open-modal-btn" style="padding: 8px 20px; font-size: 0.9rem;">Saber Mais</button>
+            <button type="button" class="btn btn-outline btn-sm open-modal-btn">Saber Mais</button>
           </div>
-        </div>
+        </article>
 
-        <!-- Program 2 -->
-        <div class="program-card">
+        <article class="program-card">
           <div class="program-img">
-            <img src="https://images.unsplash.com/photo-1534367507873-d2d7e24c797f?auto=format&fit=crop&w=600&q=80" alt="Weight Lifting">
+            <img src="assets/images/programa-forca.webp" alt="Aluno fazendo rosca com halteres e anilhas ao lado do rack de força na X-Move Gym" width="750" height="1000" loading="lazy" decoding="async">
           </div>
           <div class="program-body">
             <h3>TREINO DE FORÇA & LIFTING</h3>
             <p>Espaço exclusivo com plataformas de levantamento olímpico e barras técnicas para atletas.</p>
-            <button class="btn btn-outline open-modal-btn" style="padding: 8px 20px; font-size: 0.9rem;">Saber Mais</button>
+            <button type="button" class="btn btn-outline btn-sm open-modal-btn">Saber Mais</button>
           </div>
-        </div>
+        </article>
 
-        <!-- Program 3 -->
-        <div class="program-card">
+        <article class="program-card">
           <div class="program-img">
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Personal Trainer">
+            <img src="assets/images/programa-personal.webp" alt="Personal trainer da X-Move Gym ao lado de aluno na máquina de treino" width="750" height="1000" loading="lazy" decoding="async">
           </div>
           <div class="program-body">
             <h3>PERSONAL TRAINER DEDICADO</h3>
             <p>Acompanhamento 1 a 1 para maximizar seus resultados com segurança e correção postural.</p>
-            <button class="btn btn-outline open-modal-btn" style="padding: 8px 20px; font-size: 0.9rem;">Saber Mais</button>
+            <button type="button" class="btn btn-outline btn-sm open-modal-btn">Saber Mais</button>
           </div>
-        </div>
+        </article>
 
-        <!-- Program 4 -->
-        <div class="program-card">
+        <article class="program-card">
           <div class="program-img">
-            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=600&q=80" alt="Physiotherapy Recovery">
+            <img src="assets/images/programa-fisioterapia.webp" alt="Atendimento de fisioterapia e reabilitação na X-Move Gym" width="750" height="1000" loading="lazy" decoding="async">
           </div>
           <div class="program-body">
             <h3>FISIOTERAPIA & REABILITAÇÃO</h3>
             <p>Tratamento de lesões, liberação miofascial e recuperação física com profissionais da área.</p>
-            <button class="btn btn-outline open-modal-btn" style="padding: 8px 20px; font-size: 0.9rem;">Saber Mais</button>
+            <button type="button" class="btn btn-outline btn-sm open-modal-btn">Saber Mais</button>
           </div>
-        </div>
+        </article>
 
-        <!-- Program 5 -->
-        <div class="program-card">
+        <article class="program-card">
           <div class="program-img">
-            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Functional Training">
+            <img src="assets/images/programa-funcional.webp" alt="Aluna realizando treino funcional com trenó acompanhada pelo instrutor na X-Move Gym" width="750" height="1000" loading="lazy" decoding="async">
           </div>
           <div class="program-body">
             <h3>TREINO FUNCIONAL & CARDIO</h3>
             <p>Exercícios de alta intensidade para elevar seu condicionamento, agilidade e queima de gordura.</p>
-            <button class="btn btn-outline open-modal-btn" style="padding: 8px 20px; font-size: 0.9rem;">Saber Mais</button>
+            <button type="button" class="btn btn-outline btn-sm open-modal-btn">Saber Mais</button>
           </div>
-        </div>
+        </article>
 
-        <!-- Program 6 -->
-        <div class="program-card">
+        <article class="program-card">
           <div class="program-img">
-            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Bioimpedance Assessment">
+            <img src="assets/images/programa-yoga.webp" alt="Alunas praticando yoga no tatame da X-Move Gym" width="800" height="1000" loading="lazy" decoding="async">
           </div>
           <div class="program-body">
-            <h3>AVALIAÇÃO DE BIOIMPEDÂNCIA</h3>
-            <p>Análise corporal detalhada percentual de gordura, massa magra e taxa metabólica basal.</p>
-            <button class="btn btn-outline open-modal-btn" style="padding: 8px 20px; font-size: 0.9rem;">Saber Mais</button>
+            <h3>AULAS DE YOGA</h3>
+            <p>Práticas focadas em flexibilidade, respiração, equilíbrio e conexão entre corpo e mente.</p>
+            <button type="button" class="btn btn-outline btn-sm open-modal-btn">Saber Mais</button>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- ==================== CONHEÇA A ACADEMIA (ESTRUTURA) ==================== -->
-  <section class="section" id="estrutura" style="background: var(--bg-dark-alt);">
+  <section class="section section-alt" id="estrutura">
     <div class="neon-grid-pattern"></div>
     <div class="neon-bg-orb orb-yellow-left"></div>
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">NOSSO ESPAÇO</span>
-        <h2 class="section-title">CONHEÇA A <span style="color: var(--accent-yellow);">ACADEMIA</span></h2>
+        <h2 class="section-title">CONHEÇA A <span class="accent">ACADEMIA</span></h2>
         <p>Estrutura ampla, climatizada e equipada com maquinário biomecânico de alta precisão para seus treinos.</p>
       </div>
 
@@ -283,67 +322,132 @@
       <!-- Gallery Grid -->
       <div class="gallery-grid">
         
-        <!-- Item 1: Musculação Heavy (Featured Large) -->
-        <div class="gallery-item featured" data-gallery-cat="musculacao">
-          <div class="gallery-img-wrapper" data-lightbox-src="assets/images/estrutura-musculacao.jpg" data-lightbox-title="Área Principal de Musculação" data-lightbox-desc="Maquinário biomecânico completo, espelhos retroiluminados em LED amarelo e ambiente climatizado de alta performance.">
-            <img src="assets/images/estrutura-musculacao.jpg" alt="Área Principal de Musculação X-Move Gym">
+        <!-- Item 1: Musculação Heavy -->
+        <div class="gallery-item" data-gallery-cat="musculacao">
+          <div class="gallery-img-wrapper" role="button" tabindex="0" aria-label="Ampliar foto: Área Principal de Musculação" data-lightbox-src="assets/images/estrutura-musculacao.jpg" data-lightbox-title="Área Principal de Musculação" data-lightbox-desc="Maquinário biomecânico completo, espelhos retroiluminados em LED amarelo e ambiente climatizado de alta performance.">
+            <img src="assets/images/estrutura-musculacao.jpg" alt="Área Principal de Musculação X-Move Gym" width="1024" height="576" loading="lazy" decoding="async">
             <div class="gallery-overlay">
-              <span class="gallery-badge">DESTAQUE</span>
+              <span class="gallery-badge">MUSCULAÇÃO</span>
               <h3>Área Principal de Musculação</h3>
               <p>Maquinário biomecânico completo, espelhos retroiluminados em LED amarelo e piso de madeira.</p>
-              <button class="gallery-expand-btn">🔍 Expandir Foto</button>
+              <span class="gallery-expand-btn" aria-hidden="true">🔍 Expandir Foto</span>
             </div>
           </div>
         </div>
 
         <!-- Item 2: Halteres & Peso Livre -->
         <div class="gallery-item" data-gallery-cat="halteres">
-          <div class="gallery-img-wrapper" data-lightbox-src="assets/images/estrutura-halteres.jpg" data-lightbox-title="Estante de Halteres & Peso Livre" data-lightbox-desc="Ampla variedade de halteres pesados e anilhas de alta tonelagem para treinos de hipertrofia máxima e força bruta.">
-            <img src="assets/images/estrutura-halteres.jpg" alt="Estante de Halteres e Anilhas X-Move Gym">
+          <div class="gallery-img-wrapper" role="button" tabindex="0" aria-label="Ampliar foto: Estante de Halteres & Peso Livre" data-lightbox-src="assets/images/estrutura-halteres.jpg" data-lightbox-title="Estante de Halteres & Peso Livre" data-lightbox-desc="Ampla variedade de halteres pesados e anilhas de alta tonelagem para treinos de hipertrofia máxima e força bruta.">
+            <img src="assets/images/estrutura-halteres.jpg" alt="Estante de Halteres e Anilhas X-Move Gym" width="663" height="1024" loading="lazy" decoding="async">
             <div class="gallery-overlay">
               <span class="gallery-badge">PESO LIVRE</span>
               <h3>Halteres & Anilhas Heavy</h3>
               <p>Grande variedade de pesos de alta tonelagem para hipertrofia máxima.</p>
-              <button class="gallery-expand-btn">🔍 Expandir Foto</button>
+              <span class="gallery-expand-btn" aria-hidden="true">🔍 Expandir Foto</span>
             </div>
           </div>
         </div>
 
         <!-- Item 3: Torres de Polias -->
         <div class="gallery-item" data-gallery-cat="polias">
-          <div class="gallery-img-wrapper" data-lightbox-src="assets/images/estrutura-polias.jpg" data-lightbox-title="Torres de Polias & Crossover" data-lightbox-desc="Estações completas de cabos com regulagem de altura e puxadores biomecânicos para isolamento muscular perfeito.">
-            <img src="assets/images/estrutura-polias.jpg" alt="Torres de Polias e Crossover X-Move Gym">
+          <div class="gallery-img-wrapper" role="button" tabindex="0" aria-label="Ampliar foto: Torres de Polias & Crossover" data-lightbox-src="assets/images/estrutura-polias.jpg" data-lightbox-title="Torres de Polias & Crossover" data-lightbox-desc="Estações completas de cabos com regulagem de altura e puxadores biomecânicos para isolamento muscular perfeito.">
+            <img src="assets/images/estrutura-polias.jpg" alt="Torres de Polias e Crossover X-Move Gym" width="768" height="1024" loading="lazy" decoding="async">
             <div class="gallery-overlay">
               <span class="gallery-badge">BIOMECÂNICA</span>
               <h3>Torres de Polias & Crossover</h3>
               <p>Estações completas de cabos para ajuste de ângulo e isolamento muscular.</p>
-              <button class="gallery-expand-btn">🔍 Expandir Foto</button>
+              <span class="gallery-expand-btn" aria-hidden="true">🔍 Expandir Foto</span>
             </div>
           </div>
         </div>
 
         <!-- Item 4: Zona Cardio -->
         <div class="gallery-item" data-gallery-cat="cardio">
-          <div class="gallery-img-wrapper" data-lightbox-src="assets/images/estrutura-cardio.jpg" data-lightbox-title="Zona de Cardio & Escadas" data-lightbox-desc="Equipamentos aeróbicos de alta performance incluindo simuladores de escada (Stairmaster), esteiras rápidas e bikes.">
-            <img src="assets/images/estrutura-cardio.jpg" alt="Zona de Cardio e Escadas X-Move Gym">
+          <div class="gallery-img-wrapper" role="button" tabindex="0" aria-label="Ampliar foto: Zona de Cardio & Escadas" data-lightbox-src="assets/images/estrutura-cardio.jpg" data-lightbox-title="Zona de Cardio & Escadas" data-lightbox-desc="Equipamentos aeróbicos de alta performance incluindo simuladores de escada (Stairmaster), esteiras rápidas e bikes.">
+            <img src="assets/images/estrutura-cardio.jpg" alt="Zona de Cardio e Escadas X-Move Gym" width="768" height="1024" loading="lazy" decoding="async">
             <div class="gallery-overlay">
               <span class="gallery-badge">AERÓBICO</span>
               <h3>Zona de Cardio & Escadas</h3>
               <p>Simuladores de escada (Stairmaster), esteiras e bikes de alta performance.</p>
-              <button class="gallery-expand-btn">🔍 Expandir Foto</button>
+              <span class="gallery-expand-btn" aria-hidden="true">🔍 Expandir Foto</span>
             </div>
           </div>
         </div>
 
         <!-- Item 5: Tatame & Lutas -->
         <div class="gallery-item" data-gallery-cat="tatame">
-          <div class="gallery-img-wrapper" data-lightbox-src="assets/images/estrutura-tatame.jpg" data-lightbox-title="Espaço Tatame & Artes Marciais" data-lightbox-desc="Área ampla coberta com tatames profissionais para treinos funcionais, aulas coletivas e artes marciais (Jiu-Jitsu / Lutas).">
-            <img src="assets/images/estrutura-tatame.jpg" alt="Espaço Tatame e Lutas X-Move Gym">
+          <div class="gallery-img-wrapper" role="button" tabindex="0" aria-label="Ampliar foto: Espaço Tatame & Artes Marciais" data-lightbox-src="assets/images/estrutura-tatame.jpg" data-lightbox-title="Espaço Tatame & Artes Marciais" data-lightbox-desc="Área ampla coberta com tatames profissionais para treinos funcionais, aulas coletivas e artes marciais (Jiu-Jitsu / Lutas).">
+            <img src="assets/images/estrutura-tatame.jpg" alt="Espaço Tatame e Lutas X-Move Gym" width="1024" height="576" loading="lazy" decoding="async" style="object-position: center 60%;">
             <div class="gallery-overlay">
               <span class="gallery-badge">TATAME</span>
               <h3>Espaço de Lutas & Funcional</h3>
               <p>Área ampla com tatame profissional para artes marciais e funcional.</p>
-              <button class="gallery-expand-btn">🔍 Expandir Foto</button>
+              <span class="gallery-expand-btn" aria-hidden="true">🔍 Expandir Foto</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Área de Esteiras & Elípticos -->
+        <div class="gallery-item" data-gallery-cat="cardio">
+          <div class="gallery-img-wrapper" role="button" tabindex="0" aria-label="Ampliar foto: Área de Esteiras & Elípticos" data-lightbox-src="assets/images/estrutura-esteiras-elipticos.jpg" data-lightbox-title="Área de Esteiras & Elípticos" data-lightbox-desc="Linha de esteiras e elípticos modernos com vista ampla e ambiente climatizado.">
+            <img src="assets/images/estrutura-esteiras-elipticos.jpg" alt="Área de Esteiras e Elípticos X-Move Gym" width="1024" height="576" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-badge">CARDIO</span>
+              <h3>Área de Esteiras & Elípticos</h3>
+              <p>Linha de esteiras e elípticos modernos com vista ampla e ambiente climatizado.</p>
+              <span class="gallery-expand-btn" aria-hidden="true">🔍 Expandir Foto</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: Máquinas Articuladas a Disco -->
+        <div class="gallery-item" data-gallery-cat="musculacao">
+          <div class="gallery-img-wrapper" role="button" tabindex="0" aria-label="Ampliar foto: Máquinas Articuladas a Disco" data-lightbox-src="assets/images/estrutura-articuladas-disco.jpg" data-lightbox-title="Máquinas Articuladas a Disco" data-lightbox-desc="Equipamentos convergentes com anilhas olímpicas para máxima sobrecarga e precisão articular.">
+            <img src="assets/images/estrutura-articuladas-disco.jpg" alt="Máquinas Articuladas a Disco X-Move Gym" width="1024" height="576" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-badge">CARGA LIVRE</span>
+              <h3>Máquinas Articuladas a Disco</h3>
+              <p>Equipamentos convergentes com anilhas olímpicas para máxima sobrecarga e precisão articular.</p>
+              <span class="gallery-expand-btn" aria-hidden="true">🔍 Expandir Foto</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8: Espaço de Ciclismo & Bikes -->
+        <div class="gallery-item" data-gallery-cat="cardio">
+          <div class="gallery-img-wrapper" role="button" tabindex="0" aria-label="Ampliar foto: Espaço de Ciclismo & Bikes" data-lightbox-src="assets/images/estrutura-bikes-panoramica.jpg" data-lightbox-title="Espaço de Ciclismo & Bikes" data-lightbox-desc="Área dedicada a bikes ergométricas com vista panorâmica externa e iluminação natural.">
+            <img src="assets/images/estrutura-bikes-panoramica.jpg" alt="Espaço de Ciclismo e Bikes X-Move Gym" width="1024" height="576" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-badge">SPINNING</span>
+              <h3>Espaço de Ciclismo & Bikes</h3>
+              <p>Área dedicada a bikes ergométricas com vista panorâmica externa e iluminação natural.</p>
+              <span class="gallery-expand-btn" aria-hidden="true">🔍 Expandir Foto</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9: Cardio Panorâmico Movement -->
+        <div class="gallery-item" data-gallery-cat="cardio">
+          <div class="gallery-img-wrapper" role="button" tabindex="0" aria-label="Ampliar foto: Cardio Panorâmico Movement" data-lightbox-src="assets/images/estrutura-cardio-movement.jpg" data-lightbox-title="Cardio Panorâmico Movement" data-lightbox-desc="Equipamentos Movement com monitoramento em tempo real e vista privilegiada durante o treino.">
+            <img src="assets/images/estrutura-cardio-movement.jpg" alt="Cardio Panorâmico Movement X-Move Gym" width="1024" height="576" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-badge">PANORÂMICO</span>
+              <h3>Cardio Panorâmico Movement</h3>
+              <p>Equipamentos Movement com monitoramento em tempo real e vista privilegiada durante o treino.</p>
+              <span class="gallery-expand-btn" aria-hidden="true">🔍 Expandir Foto</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 10: Setor de Máquinas para Pernas -->
+        <div class="gallery-item" data-gallery-cat="musculacao">
+          <div class="gallery-img-wrapper" role="button" tabindex="0" aria-label="Ampliar foto: Setor de Máquinas para Pernas" data-lightbox-src="assets/images/estrutura-maquinas-pernas.jpg" data-lightbox-title="Setor de Máquinas para Pernas" data-lightbox-desc="Aparelhos guiados para treino completo de inferiores: abdutoras, adutoras, leg press e extensoras.">
+            <img src="assets/images/estrutura-maquinas-pernas.jpg" alt="Setor de Máquinas para Pernas X-Move Gym" width="1024" height="576" loading="lazy" decoding="async">
+            <div class="gallery-overlay">
+              <span class="gallery-badge">MEMBROS INFERIORES</span>
+              <h3>Setor de Máquinas para Pernas</h3>
+              <p>Aparelhos guiados para treino completo de inferiores: abdutoras, adutoras, leg press e extensoras.</p>
+              <span class="gallery-expand-btn" aria-hidden="true">🔍 Expandir Foto</span>
             </div>
           </div>
         </div>
@@ -353,11 +457,11 @@
   </section>
 
   <!-- ==================== 6. NOSSA LOCALIZAÇÃO ==================== -->
-  <section class="section" id="unidades" style="background: var(--bg-dark-alt);">
+  <section class="section section-alt" id="unidades">
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">ONDE ESTAMOS</span>
-        <h2 class="section-title">NOSSA <span style="color: var(--accent-yellow);">LOCALIZAÇÃO</span></h2>
+        <h2 class="section-title">NOSSA <span class="accent">LOCALIZAÇÃO</span></h2>
         <p>Musculação heavy, ambiente climatizado e suporte profissional em Montes Claros / MG.</p>
       </div>
 
@@ -375,13 +479,17 @@
             <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Estacionamento privativo & Wi-Fi rápido</li>
             <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Musculação heavy & Vestiários climatizados</li>
           </ul>
-          <a href="https://wa.me/5538999459994?text=Olá!%20Gostaria%20de%20informações%20sobre%20a%20unidade%20Montes%20Claros." target="_blank" class="btn btn-whatsapp">
+          <a href="https://wa.me/5538999459994?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20X-Move%20Gym." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            WhatsApp MOC: (38) 99945-9994
+            WhatsApp: (38) 99945-9994
+          </a>
+          <a href="https://maps.app.goo.gl/956UyR5K5Nommwva8" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block map-route-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+            Como chegar
           </a>
         </div>
         <div class="unit-map-container">
-          <iframe title="Mapa Montes Claros" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.425121895232!2d-43.8682!3d-16.7275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQzJzM5LjAiUyA0M8KwNTInMDUuNSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+          <iframe title="Mapa: X-Move Gym, Rua João F. Pimenta, 32, Montes Claros" src="https://www.google.com/maps?q=-16.728485,-43.8725011&hl=pt-BR&z=17&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
@@ -394,57 +502,71 @@
       <div class="wellhub-banner">
         <div class="wellhub-content">
           <span class="section-subtitle">BENEFÍCIO CORPORATIVO</span>
-          <h2>PARCERIA OFICIAL <span style="color: var(--accent-yellow);">WELLHUB (GYMPASS)</span></h2>
+          <h2>PARCERIA OFICIAL <span class="accent">WELLHUB (GYMPASS)</span></h2>
           <p>Treine na X-Move Gym em Montes Claros utilizando seu plano corporativo. Check-in simples e rápido direto na recepção!</p>
-        </div>
-        <div style="text-align: center;">
-          <button class="btn btn-orange open-modal-btn" id="btn-wellhub">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-            Validar Check-in Wellhub
-          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== 8. CALCULADORA DE TREINO ==================== -->
-  <section class="section" id="simulador" style="background: var(--bg-dark-alt);">
+  <!-- ==================== 8. SIMULADOR DE PLANO ==================== -->
+  <section class="section section-alt" id="simulador">
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">DIAGNÓSTICO RÁPIDO</span>
-        <h2 class="section-title">CALCULADORA DE <span style="color: var(--accent-orange);">TREINO</span></h2>
-        <p>Insira seus dados para receber uma recomendação imediata.</p>
+        <h2 class="section-title">ENCONTRE O <span class="accent">PLANO IDEAL</span></h2>
+        <p>Responda 3 perguntas e veja o plano certo para você, com valor, total e economia.</p>
       </div>
 
       <div class="calc-card">
-        <div class="calc-grid">
-          <div class="input-group">
-            <label for="calcWeight">Seu Peso (kg)</label>
-            <input type="number" id="calcWeight" class="input-control" placeholder="Ex: 75">
+        <form id="planFinder" novalidate>
+          <div class="calc-grid">
+            <div class="input-group" style="grid-column: 1 / -1;">
+              <label for="calcGoal">1. Qual seu principal objetivo?</label>
+              <select id="calcGoal" class="input-control">
+                <option value="hypertrophy">Hipertrofia &amp; ganho de massa muscular</option>
+                <option value="weightloss">Emagrecimento &amp; definição corporal</option>
+                <option value="health">Saúde, postura e qualidade de vida</option>
+                <option value="rehab">Reabilitação &amp; prevenção de lesões</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="calcFreq">2. Quantos dias por semana?</label>
+              <select id="calcFreq" class="input-control">
+                <option value="2">2x por semana</option>
+                <option value="3" selected>3x por semana</option>
+                <option value="7">Todos os dias (7x)</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="calcCommit">3. O que pesa mais para você?</label>
+              <select id="calcCommit" class="input-control">
+                <option value="mensal">Flexibilidade (sem fidelidade)</option>
+                <option value="semestral">Economia no semestre</option>
+                <option value="anual" selected>Melhor custo-benefício (anual)</option>
+              </select>
+            </div>
           </div>
-          <div class="input-group">
-            <label for="calcHeight">Sua Altura (cm)</label>
-            <input type="number" id="calcHeight" class="input-control" placeholder="Ex: 175">
-          </div>
-          <div class="input-group" style="grid-column: 1 / -1;">
-            <label for="calcGoal">Qual seu Principal Objetivo?</label>
-            <select id="calcGoal" class="input-control">
-              <option value="hypertrophy">Hipertrofia & Ganho de Massa Muscular</option>
-              <option value="weightloss">Emagrecimento & Definição Corporal</option>
-              <option value="health">Saúde, Postura e Qualidade de Vida</option>
-            </select>
-          </div>
-        </div>
 
-        <button class="btn btn-orange btn-full" id="calcBtn">
-          ⚡ Gerar Recomendação de Treino
-        </button>
-
-        <div class="calc-result-box" id="calcResult">
-          <p id="resultText" style="color: var(--text-main); font-weight: 600;"></p>
-          <button class="btn btn-whatsapp open-modal-btn" style="margin-top: 16px;">
-            💬 Resgatar Plano Personalizado
+          <button type="submit" class="btn btn-orange btn-full" id="calcBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            Descobrir meu plano
           </button>
+        </form>
+
+        <div class="calc-result-box" id="calcResult" aria-live="polite" tabindex="-1">
+          <span class="plan-result-kicker">SEU PLANO IDEAL</span>
+          <h3 id="resPlan"></h3>
+          <p class="plan-result-price" id="resPrice"></p>
+          <p class="plan-result-meta" id="resMeta"></p>
+          <p class="plan-result-programs" id="resPrograms"></p>
+          <div class="plan-result-actions">
+            <a class="btn btn-whatsapp" id="resWhats" href="#" target="_blank" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"></path></svg>
+              Quero esse plano
+            </a>
+            <a class="btn btn-outline" href="#planos">Ver todos os planos</a>
+          </div>
         </div>
       </div>
     </div>
@@ -457,7 +579,7 @@
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">INVESTIMENTO</span>
-        <h2 class="section-title">NOSSOS <span style="color: var(--accent-yellow);">PLANOS</span></h2>
+        <h2 class="section-title">NOSSOS <span class="accent">PLANOS</span></h2>
         <p style="background: var(--accent-yellow); color: #0b0c10; font-weight: 800; display: inline-block; padding: 6px 20px; border-radius: var(--radius-sm); margin-top: 10px; font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.08em;">
           Escolha qual é o ideal para você!
         </p>
@@ -465,11 +587,11 @@
 
       <!-- Plan Interactive Filter Tabs -->
       <div class="plan-tab-nav">
-        <button class="plan-tab-btn active" data-filter="all">Todos os Planos</button>
-        <button class="plan-tab-btn" data-filter="semestral">Semestral (Avaliação Grátis)</button>
-        <button class="plan-tab-btn" data-filter="anual">Anual (Melhor Custo-Benefício)</button>
-        <button class="plan-tab-btn" data-filter="mensal">Mensal</button>
-        <button class="plan-tab-btn" data-filter="avaliacao">Avaliação Física</button>
+        <button type="button" class="plan-tab-btn active" data-filter="all">Todos os Planos</button>
+        <button type="button" class="plan-tab-btn" data-filter="semestral">Semestral (Avaliação Grátis)</button>
+        <button type="button" class="plan-tab-btn" data-filter="anual">Anual (Melhor Custo-Benefício)</button>
+        <button type="button" class="plan-tab-btn" data-filter="mensal">Mensal</button>
+        <button type="button" class="plan-tab-btn" data-filter="avaliacao">Avaliação Física</button>
       </div>
 
       <div class="pricing-grid">
@@ -487,19 +609,24 @@
             </div>
 
             <ul class="price-freq-list">
-              <li class="price-freq-item">
+              <li class="price-freq-item" data-plan="semestral" data-freq="2" data-parcelas="6" data-valor="112.00">
                 <span class="freq-label">⚡ 2x na semana</span>
                 <span class="freq-val">6x de R$ 112,00</span>
+                <span class="freq-meta">Total <strong>R$&nbsp;672,00</strong> · economia <strong>R$&nbsp;48,00</strong></span>
               </li>
-              <li class="price-freq-item">
+              <li class="price-freq-item" data-plan="semestral" data-freq="3" data-parcelas="6" data-valor="130.00">
                 <span class="freq-label">⚡ 3x na semana</span>
                 <span class="freq-val">6x de R$ 130,00</span>
+                <span class="freq-meta">Total <strong>R$&nbsp;780,00</strong> · economia <strong>R$&nbsp;60,00</strong></span>
               </li>
-              <li class="price-freq-item highlight">
+              <li class="price-freq-item highlight" data-plan="semestral" data-freq="7" data-parcelas="6" data-valor="149.00">
                 <span class="freq-label">🔥 7x na semana</span>
                 <span class="freq-val">6x de R$ 149,00</span>
+                <span class="freq-meta">Total <strong>R$&nbsp;894,00</strong> · economia <strong>R$&nbsp;66,00</strong></span>
               </li>
             </ul>
+
+            <p class="price-note">Economia calculada sobre o plano mensal, na mesma frequência semanal.</p>
 
             <ul class="unit-features-list" style="margin-top: 12px;">
               <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Avaliação física gratuita inclusa</li>
@@ -507,7 +634,7 @@
               <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Suporte de instrutores na pista</li>
             </ul>
           </div>
-          <button class="btn btn-orange open-modal-btn" style="margin-top: 24px;">
+          <button type="button" class="btn btn-orange open-modal-btn" style="margin-top: 24px;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
             Escolher Semestral
           </button>
@@ -526,19 +653,24 @@
             </div>
 
             <ul class="price-freq-list">
-              <li class="price-freq-item">
+              <li class="price-freq-item" data-plan="anual" data-freq="2" data-parcelas="12" data-valor="110.00">
                 <span class="freq-label">⚡ 2x na semana</span>
                 <span class="freq-val">12x de R$ 110,00</span>
+                <span class="freq-meta">Total <strong>R$&nbsp;1.320,00</strong> · economia <strong>R$&nbsp;120,00</strong></span>
               </li>
-              <li class="price-freq-item">
+              <li class="price-freq-item" data-plan="anual" data-freq="3" data-parcelas="12" data-valor="128.00">
                 <span class="freq-label">⚡ 3x na semana</span>
                 <span class="freq-val">12x de R$ 128,00</span>
+                <span class="freq-meta">Total <strong>R$&nbsp;1.536,00</strong> · economia <strong>R$&nbsp;144,00</strong></span>
               </li>
-              <li class="price-freq-item highlight">
+              <li class="price-freq-item highlight" data-plan="anual" data-freq="7" data-parcelas="12" data-valor="147.00">
                 <span class="freq-label">🔥 7x na semana</span>
                 <span class="freq-val">12x de R$ 147,00</span>
+                <span class="freq-meta">Total <strong>R$&nbsp;1.764,00</strong> · economia <strong>R$&nbsp;156,00</strong></span>
               </li>
             </ul>
+
+            <p class="price-note">Economia calculada sobre o plano mensal, na mesma frequência semanal.</p>
 
             <ul class="unit-features-list" style="margin-top: 12px;">
               <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Maior economia anual garantida</li>
@@ -546,7 +678,7 @@
               <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Acesso total à estrutura Montes Claros / MG</li>
             </ul>
           </div>
-          <button class="btn btn-orange open-modal-btn" style="margin-top: 24px;">
+          <button type="button" class="btn btn-orange open-modal-btn" style="margin-top: 24px;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
             Garantir Anual VIP
           </button>
@@ -559,15 +691,15 @@
             <p style="font-size: 0.9rem; color: var(--text-muted);">Treine com total flexibilidade sem fidelidade.</p>
 
             <ul class="price-freq-list" style="margin-top: 24px;">
-              <li class="price-freq-item">
+              <li class="price-freq-item" data-plan="mensal" data-freq="2" data-parcelas="1" data-valor="120.00">
                 <span class="freq-label">⚡ 2x na semana</span>
                 <span class="freq-val">R$ 120,00</span>
               </li>
-              <li class="price-freq-item">
+              <li class="price-freq-item" data-plan="mensal" data-freq="3" data-parcelas="1" data-valor="140.00">
                 <span class="freq-label">⚡ 3x na semana</span>
                 <span class="freq-val">R$ 140,00</span>
               </li>
-              <li class="price-freq-item highlight">
+              <li class="price-freq-item highlight" data-plan="mensal" data-freq="7" data-parcelas="1" data-valor="160.00">
                 <span class="freq-label">🔥 7x na semana</span>
                 <span class="freq-val">R$ 160,00</span>
               </li>
@@ -579,7 +711,7 @@
               <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Vestiários modernos & Wi-Fi rápido</li>
             </ul>
           </div>
-          <button class="btn btn-outline open-modal-btn" style="margin-top: 24px;">Matricular no Mensal</button>
+          <button type="button" class="btn btn-outline open-modal-btn" style="margin-top: 24px;">Matricular no Mensal</button>
         </div>
 
         <!-- Card 4: AVALIAÇÃO FÍSICA -->
@@ -597,7 +729,7 @@
               <li><span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg></span> Atendimento personalizado por especialista</li>
             </ul>
           </div>
-          <button class="btn btn-outline open-modal-btn" style="margin-top: 24px;">Agendar Avaliação</button>
+          <button type="button" class="btn btn-outline open-modal-btn" style="margin-top: 24px;">Agendar Avaliação</button>
         </div>
 
       </div>
@@ -612,40 +744,40 @@
   </section>
 
   <!-- ==================== 10. FAQ SECTION ==================== -->
-  <section class="section" id="faq" style="background: var(--bg-dark-alt);">
+  <section class="section section-alt" id="faq">
     <div class="container">
       <div class="section-header">
         <span class="section-subtitle">DÚVIDAS FREQUENTES</span>
-        <h2 class="section-title">PERGUNTAS <span style="color: var(--accent-yellow);">FREQUENTES</span></h2>
+        <h2 class="section-title">PERGUNTAS <span class="accent">FREQUENTES</span></h2>
       </div>
 
       <div class="faq-list">
         <div class="faq-item">
-          <button class="faq-header">
+          <button type="button" class="faq-header" id="faq-btn-1" aria-expanded="false" aria-controls="faq-panel-1">
             <span>COMO FUNCIONA O TREINO GRÁTIS DE 1 DIA?</span>
-            <span class="icon">+</span>
+            <span class="icon" aria-hidden="true">+</span>
           </button>
-          <div class="faq-body">
+          <div class="faq-body" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1">
             <p>Basta preencher nosso formulário de cadastro. Você receberá um voucher direto no seu WhatsApp para apresentar na recepção da X-Move Gym em Montes Claros!</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-header">
+          <button type="button" class="faq-header" id="faq-btn-2" aria-expanded="false" aria-controls="faq-panel-2">
             <span>POSSO USAR O WELLHUB NA X-MOVE GYM?</span>
-            <span class="icon">+</span>
+            <span class="icon" aria-hidden="true">+</span>
           </button>
-          <div class="faq-body">
+          <div class="faq-body" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2">
             <p>Sim! Aceitamos o aplicativo Wellhub. Basta fazer o check-in na recepção ao chegar.</p>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-header">
+          <button type="button" class="faq-header" id="faq-btn-3" aria-expanded="false" aria-controls="faq-panel-3">
             <span>QUAL O HORÁRIO DE FUNCIONAMENTO?</span>
-            <span class="icon">+</span>
+            <span class="icon" aria-hidden="true">+</span>
           </button>
-          <div class="faq-body">
+          <div class="faq-body" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3">
             <p>Segunda a Sexta das 05h30 às 22h00. Sábados e Domingos das 08h00 às 12h00.</p>
           </div>
         </div>
@@ -653,24 +785,35 @@
     </div>
   </section>
 
+  </main>
+
+  <!-- ==================== WHATSAPP FLUTUANTE ==================== -->
+  <a class="wa-float" id="waFloat" href="https://wa.me/5538999459994?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20X-Move%20Gym." target="_blank" rel="noopener noreferrer" aria-label="Falar com a X-Move Gym no WhatsApp">
+    <span class="wa-float-label">Fale conosco</span>
+    <span class="wa-float-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"></path></svg>
+    </span>
+  </a>
+
   <!-- ==================== LEAD MODAL ==================== -->
-  <div class="modal-overlay" id="leadModal">
-    <div class="modal-box">
-      <button class="modal-close-btn">&times;</button>
+  <div class="modal-overlay" id="leadModal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle">
+      <button type="button" class="modal-close-btn" aria-label="Fechar">&times;</button>
       <div style="text-align: center; margin-bottom: 24px;">
         <span class="section-subtitle">VOUCHER EXCLUSIVO</span>
-        <h3 style="font-size: 1.8rem;">GANHE 1 DIA GRÁTIS</h3>
+        <h3 id="leadModalTitle" style="font-size: 1.8rem;">GANHE 1 DIA GRÁTIS</h3>
       </div>
 
-      <form id="freePassForm">
+      <form id="freePassForm" novalidate>
         <div style="margin-bottom: 16px;">
-          <label style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 6px;">Seu Nome Completo</label>
-          <input type="text" id="leadName" class="input-control" placeholder="Ex: Rodrigo Santos" required>
+          <label for="leadName" class="field-label">Seu Nome Completo</label>
+          <input type="text" id="leadName" name="name" class="input-control" placeholder="Ex: Rodrigo Santos" autocomplete="name" required>
         </div>
 
         <div style="margin-bottom: 20px;">
-          <label style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 6px;">Seu WhatsApp (com DDD)</label>
-          <input type="tel" id="leadPhone" class="input-control" placeholder="Ex: (38) 99999-9999" required>
+          <label for="leadPhone" class="field-label">Seu WhatsApp (com DDD)</label>
+          <input type="tel" id="leadPhone" name="phone" class="input-control" placeholder="Ex: (38) 99999-9999" inputmode="tel" autocomplete="tel-national" maxlength="15" required>
+          <p class="form-error" id="leadError" role="alert" hidden></p>
         </div>
 
         <button type="submit" class="btn btn-orange btn-full">
@@ -682,31 +825,31 @@
   </div>
 
   <!-- ==================== LIGHTBOX CAROUSEL MODAL ==================== -->
-  <div class="lightbox-modal" id="lightboxModal">
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Galeria de fotos da academia" aria-hidden="true">
     <div class="lightbox-content">
-      <button class="lightbox-close-btn" id="lightboxCloseBtn" title="Fechar (Esc)">&times;</button>
+      <button type="button" class="lightbox-close-btn" id="lightboxCloseBtn" title="Fechar (Esc)" aria-label="Fechar galeria">&times;</button>
       
       <div class="lightbox-img-wrapper">
-        <button class="lightbox-nav-btn prev-btn" id="lightboxPrevBtn" title="Foto Anterior (Seta Esquerda)">
+        <button type="button" class="lightbox-nav-btn prev-btn" id="lightboxPrevBtn" title="Foto anterior" aria-label="Foto anterior">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
         </button>
         
         <div class="lightbox-img-container">
-          <img src="" id="lightboxImg" alt="Foto Ampliada X-Move Gym">
-          <span class="lightbox-counter-badge" id="lightboxCounter">Foto 1 de 5</span>
+          <img src="" id="lightboxImg" alt="">
+          <span class="lightbox-counter-badge" id="lightboxCounter" aria-live="polite"></span>
         </div>
         
-        <button class="lightbox-nav-btn next-btn" id="lightboxNextBtn" title="Próxima Foto (Seta Direita)">
+        <button type="button" class="lightbox-nav-btn next-btn" id="lightboxNextBtn" title="Próxima foto" aria-label="Próxima foto">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
         </button>
       </div>
 
       <div class="lightbox-body">
         <div class="lightbox-info">
-          <h3 id="lightboxTitle">Título da Área</h3>
-          <p id="lightboxDesc">Descrição detalhada do espaço e equipamentos.</p>
+          <h3 id="lightboxTitle"></h3>
+          <p id="lightboxDesc"></p>
         </div>
-        <button class="btn btn-orange open-modal-btn" style="padding: 10px 24px; font-size: 0.95rem;">
+        <button type="button" class="btn btn-orange open-modal-btn" style="padding: 10px 24px; font-size: 0.95rem;">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
           Agendar Treino Grátis
         </button>
@@ -719,7 +862,7 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="#" class="brand-logo" style="margin-bottom: 16px;">
+          <a href="#home" class="brand-logo footer-brand" style="margin-bottom: 16px;" aria-label="X-Move Gym - início">
             <img src="images/logo.svg" alt="X-Move Gym Logo" class="logo-svg-img" style="height: 68px;">
           </a>
           <p style="font-size: 0.9rem;">
@@ -735,7 +878,9 @@
             <li><a href="#programas">Programas</a></li>
             <li><a href="#estrutura">Estrutura</a></li>
             <li><a href="#unidades">Localização</a></li>
+            <li><a href="#wellhub">Wellhub</a></li>
             <li><a href="#planos">Planos</a></li>
+            <li><a href="#faq">Dúvidas</a></li>
           </ul>
         </div>
 
@@ -746,14 +891,14 @@
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:6px; color:var(--accent-yellow);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> (38) 99945-9994</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:6px; color:var(--accent-yellow);"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Seg-Sex: 05h30 - 22h00</li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:6px; color:var(--accent-yellow);"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Sáb-Dom: 08h00 - 12h00</li>
-            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:6px; color:var(--accent-yellow);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> <a href="https://www.instagram.com/xmovegym" target="_blank">@xmovegym</a></li>
+            <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:6px; color:var(--accent-yellow);"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> <a href="https://www.instagram.com/xmovegym" target="_blank" rel="noopener noreferrer">@xmovegym</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>&copy; 2026 X-Move Gym — Todos os direitos reservados.</p>
-        <a href="https://alienmkt.com.br" target="_blank" class="alien-credit">
+        <a href="https://alienmkt.com.br" target="_blank" rel="noopener noreferrer" class="alien-credit">
           Produzido por <strong>Alien</strong> - Marketing Inteligente
         </a>
       </div>
