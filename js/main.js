@@ -326,10 +326,10 @@ document.addEventListener('DOMContentLoaded', () => {
         priceText = `${brl(chosen.valor)} /mês`;
         metaHtml = `Treinando ${freqText}, <strong>sem fidelidade</strong>. Cancele quando quiser.`;
       } else {
-        const total = chosen.parcelas * chosen.valor;
+        const total = chosen.parcelas * chosen.valor; // usado só no cálculo da economia
         const saving = chosen.parcelas * monthly.valor - total;
         priceText = `${chosen.parcelas}x de ${brl(chosen.valor)}`;
-        metaHtml = `Total de <strong>${brl(total)}</strong> treinando ${freqText}. Você economiza <strong>${brl(saving)}</strong> em relação ao mensal. Avaliação física grátis inclusa.`;
+        metaHtml = `Treinando ${freqText}, você economiza <strong>${brl(saving)}</strong> em relação ao mensal. Avaliação física grátis inclusa.`;
       }
 
       $('#resPlan').textContent = planNames[chosen.plan];
